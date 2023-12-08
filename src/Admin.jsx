@@ -10,11 +10,11 @@ const Admin = () => {
         <>
             <h2 style={{padding: "20px 30px"}}>Total Admins: {adminData.length}</h2>
             <div id="list">
+                <ol>
                 {adminData.map((element, index) => (
-                    <ol>
                         <li key={index}>{element.name}</li>
-                    </ol>
-                ))}
+                        ))}
+                </ol>
             </div>
         </>
     )

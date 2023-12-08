@@ -9,11 +9,11 @@ const User = () => {
         <>
             <h2 style={{padding: "20px 30px"}}>Total Users: {userData.length}</h2>
             <div id="list">
+                <ol>
                 {userData.map((element, index) => (
-                    <ol>
                         <li key={index}>{element.name}</li>
-                    </ol>
-                ))}
+                        ))}
+                </ol>
             </div>
         </>
     )
