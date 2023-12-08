@@ -1,6 +1,6 @@
 @font-face {
     font-family: gilroy;
-    src: url(Fonts/Gilroy-Regular.woff);
+    src: url(./Fonts/Gilroy-Bold.woff);
 }
 
 * {
@@ -17,7 +17,7 @@ body {
     background-color: #f1f1f1;
 }
 
-#form{
+#form {
     width: 30%;
     /* height: 80%; */
     background-color: lavender;
@@ -26,16 +26,16 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-#form form h1{
+#form form h1 {
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
-#form form{
+#form form {
     /* width: 80%; */
     display: flex;
     flex-direction: column;
@@ -44,7 +44,16 @@ body {
     gap: 10px;
 }
 
-#form form input{
+#form form select{
+    padding: 10px 20px;
+    width: 40%;
+    background-color: rgb(118, 118, 118);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#form form input {
     width: 60%;
     padding: 10px;
     margin: 5px;
@@ -54,7 +63,7 @@ body {
     background-color: #fcfcfc
 }
 
-#form form button{
+#form form button {
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
@@ -62,4 +71,20 @@ body {
     background-color: royalblue;
     font-weight: 700;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #form{
+        width: 80vw;
+    }
+    #form form input{
+        width: 80%;
+    }
+    #form form select{
+        padding: 2vw 5vw;
+        width: 40%;
+        background-color: rgb(118, 118, 118);
+        color: #fff;
+        font-size: 3vw;
+    }
 }
